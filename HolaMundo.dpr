@@ -6,10 +6,14 @@ program HolaMundo;
 
 uses
   System.SysUtils;
+  var
+  s : string;
 
 begin
   try
-    { TODO -oUser -cConsole Main : Insert code here }
+    Writeln('hola mundo');
+
+    Readln(s);
   except
     on E: Exception do
       Writeln(E.ClassName, ': ', E.Message);
